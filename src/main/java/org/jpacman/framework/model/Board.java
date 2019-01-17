@@ -51,7 +51,7 @@ public class Board implements IBoardInspector {
 		assert s != null : "PRE2: Sprite not null";
 		s.occupy(tileAt(x, y));
 	}
-	
+
 	/**
 	 * Verify that the given location falls within the
 	 * borders of the board.
