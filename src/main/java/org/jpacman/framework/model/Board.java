@@ -10,7 +10,7 @@ public class Board implements IBoardInspector {
 	private final int height;
 	private final int width;
 	private final Tile[][] tiles;
-	
+
 	/**
 	 * Create a new board.
 	 * @param w Width of the board
@@ -22,14 +22,14 @@ public class Board implements IBoardInspector {
 		width = w;
 		height = h;
 		tiles = new Tile[width][height];
-		
+
 		for (int x = 0; x < w; x++) {
 			for (int y = 0; y < h; y++) {
 				tiles[x][y] = new Tile(x, y); 
 			}
 		}
 	}
-	
+
 	@Override
 	public int getHeight() {
 		return height;
